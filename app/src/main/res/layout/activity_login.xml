@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Login_Registration.Login_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tree"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:src="@drawable/nature"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_login_et_useremail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tree"
+                android:layout_marginStart="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_28sdp"
+                android:background="@drawable/outline"
+                android:cursorVisible="true"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/green_Drak"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/_12sdp"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_login_et_userpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_login_et_useremail"
+                android:layout_marginStart="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_28sdp"
+                android:background="@drawable/outline"
+                android:cursorVisible="true"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/green_Drak"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/_12sdp"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_login_et_userpass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:background="@drawable/button_design"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_btnSignIn"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/AccountId"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Are you New Hare!"/>
+
+                    <TextView
+                        android:id="@+id/login_btnSignUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/AccountId"
+                        android:text="SignUp"
+                        android:textColor="@color/green_Drak"
+                        android:textSize="@dimen/_13ssp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

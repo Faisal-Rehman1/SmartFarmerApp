@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "553183225329",
+    "project_id": "smart-farmer-e86c6",
+    "storage_bucket": "smart-farmer-e86c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553183225329:android:0dd390b56cc579f8d19050",
+        "android_client_info": {
+          "package_name": "com.Smart_Farmer.smartfarmer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553183225329-b3nfp7inrr66q8fiamvrrk6i4jcipfub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1DfCt1FqtwdWNI9U_4ocLOIXTE19nf-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553183225329-b3nfp7inrr66q8fiamvrrk6i4jcipfub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

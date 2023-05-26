@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_2sdp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/single_crops_details_gen_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green_light"
+            android:padding="10dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/single_crops_detail_cropNameEng"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:text="@string/general_infromation"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/single_crops_detail_cropNameSin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/sarang_sattar_font"
+                android:text="@string/heading"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/single_crops_detail_btnDelete"
+                android:layout_width="39dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textSize="@dimen/_12ssp"
+                android:drawableTint="@color/green_Drak"
+                app:drawableEndCompat="@drawable/ic_delete" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/single_crops_details_ExpandableRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/single_crops_details_gen_LL">
+
+            <ImageView
+                android:id="@+id/single_crops_details_Image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_crop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/single_crops_details_Image"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/single_crops_eng_DetailTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_5ssp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:inputType="textMultiLine"
+                    android:justificationMode="inter_word"
+                    android:singleLine="false"
+                    android:text="@string/ff"
+                    tools:ignore="TextViewEdits" />
+
+                <TextView
+                    android:id="@+id/single_crops_sindhi_DetailTxt2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sarang_sattar_font"
+                    android:inputType="textMultiLine"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="@dimen/_4ssp"
+                    android:singleLine="false"
+                    android:text="@string/s"
+                    tools:ignore="TextViewEdits" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

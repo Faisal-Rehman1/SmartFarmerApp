@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/choose_image"
+                android:textColor="@color/ChooseColor" />
+
+            <ImageView
+                android:id="@+id/add_cops_detail_image"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_below="@+id/t4"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/image_search"
+                android:contentDescription="@string/todo"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/add_cops_detail_headerTitleEng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_cops_detail_image"
+                android:layout_marginStart="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_28sdp"
+                android:autofillHints=""
+                android:background="@drawable/outline"
+                android:hint="@string/enter_heading_in_english"
+                android:inputType="text"
+                android:padding="@dimen/_12sdp"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/_12sdp" />
+
+            <EditText
+                android:id="@+id/add_cops_detail_headerTitleSin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_cops_detail_headerTitleEng"
+                android:layout_marginStart="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_28sdp"
+                android:autofillHints=""
+                android:background="@drawable/outline"
+                android:fontFamily="@font/sarang_sattar_font"
+                android:hint="@string/titleinsindhi"
+                android:inputType="text"
+                android:padding="@dimen/_12sdp"
+                android:textSize="@dimen/_12sdp" />
+
+            <EditText
+                android:id="@+id/add_cops_detail_header_detailstxt_Sindhi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_cops_detail_headerTitleSin"
+                android:layout_marginStart="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_28sdp"
+                android:autofillHints=""
+                android:fontFamily="@font/sarang_sattar_font"
+                android:background="@drawable/outline"
+                android:hint="@string/detailinsindhi"
+                android:inputType="text"
+                android:padding="@dimen/_12sdp"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <EditText
+                android:id="@+id/add_cops_detail_header_detailstxt_English"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_cops_detail_header_detailstxt_Sindhi"
+                android:layout_marginStart="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_28sdp"
+                android:padding="@dimen/_12sdp"
+                android:textSize="@dimen/_12sdp"
+                android:autofillHints=""
+                android:background="@drawable/outline"
+                android:hint="@string/enter_details_in_english"
+                android:inputType="text"
+                 />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_cops_detail_btnAddCropInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add_cops_detail_header_detailstxt_English"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/sarang_sattar_font"
+                android:background="@drawable/button_design"
+                android:text="@string/add_cropnamebtn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <ProgressBar
+                android:id="@+id/add_cops_detail_progressbar"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/add_cops_detail_btnAddCropInfo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

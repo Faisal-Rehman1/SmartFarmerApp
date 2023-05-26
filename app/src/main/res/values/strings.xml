@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Smart Agri Learning</string>
+    <string name="app_nameSin">ھاري جي سکيا</string>
+    <string name="admin_gmail">sajjadhussainchandio90@gmail.com</string>  <!--    admin password : admin123456-->
+    <string name="login">Login</string>
+    <string name="new_on_app">New on App</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="joined_as">Joined As</string>
+    <string name="logout">Logout</string>
+    <string name="gmail">Gmail</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="password">Password</string>
+    <string name="confrim_password">Confrim Password</string>
+    <string name="joining_as">joining as *</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account">Already Have an Account</string>
+    <string name="choose_image">Choose Image || تصوير چونڊيو</string>
+    <string name="titleinsindhi">سنڌي ۾ عنوان لکو</string>
+    <string name="detailinsindhi">تفصيلات لکو</string>
+    <string name="enter_details_in_english">Enter Details in English</string>
+    <string name="add_cropnamebtn">فصل جي معلومات شامل ڪريو</string>
+    <string name="enter_heading_in_english">Heading in English</string>
+    <string name="add">فصل شامل ڪريو</string>
+    <string name="todo">TODO</string>
+    <string name="choose_profile_image">Choose Profile Image</string>
+    <string name="update_profile_image">Update Profile Image</string>
+    <string name="heading">عام معلومات</string>
+    <string name="general_infromation">General Infromation</string>
+    <string name="ff">English</string>
+    <string name="s">الجنوب</string>
+
+</resources>

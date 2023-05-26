@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/btn_tv_editProfileImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_80sdp"
+            app:drawableEndCompat="@drawable/ic_edit" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Circle_profileImge"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/profile" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd_veiw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Circle_profileImge"
+            android:layout_weight="1"
+            android:backgroundTint="@color/green_light"
+            android:padding="@dimen/_20sdp"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardMaxElevation="@dimen/_5sdp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/btn_tv_editProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:drawableTint="@color/green_Drak"
+                        app:drawableEndCompat="@drawable/ic_edit" />
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_tv_editProfile"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/name"
+                        android:textAlignment="center"
+                        android:textColor="@color/green_Drak"
+                        android:textSize="@dimen/_25ssp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="30dp" />
+
+                    <TextView
+                        android:id="@+id/userPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/userName"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/phone"
+                        android:textAlignment="center"
+                        android:textColor="@color/green_Drak"
+                        android:textSize="@dimen/_20ssp" />
+
+                    <TextView
+                        android:id="@+id/userGmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/userPhone"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:text="@string/gmail"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textAlignment="center"
+                        android:textColor="@color/green_Drak"
+                        android:textSize="@dimen/_20ssp" />
+
+                    <TextView
+                        android:id="@+id/userJoinedCat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/userGmail"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/green_Drak"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/joined_as"
+                        android:textAlignment="center"
+
+                        android:textSize="@dimen/_20ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/userGmail" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogout"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@drawable/button_design"
+        android:text="@string/logout"
+        android:textAlignment="center"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/cd_veiw"/>
+
+    <TextView
+        android:id="@+id/btnDashboard"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/button_design"
+        android:gravity="center"
+        android:text="@string/dashboard"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnLogout"
+      />
+
+    </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
